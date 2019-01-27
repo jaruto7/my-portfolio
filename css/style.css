@@ -69,15 +69,15 @@ header button { font-family: 'Saira', sans-serif; font-weight: 300; line-height:
 
 section { min-height: 100vh; }
 
-section.features { max-width: 1600px; margin: 50px auto 0; padding: 5%; text-align: center; }
+section.features { max-width: 1600px; margin: 50px auto 0; text-align: center; }
 
 section.features h1 { font-family: 'Saira Extra Condensed', sans-serif; font-size: 26px; text-transform: uppercase; margin-bottom: 15px; }
 
 section.features h2 { font-family: 'Saira Extra Condensed', sans-serif; font-size: 22px; text-transform: uppercase; }
 
-section.features img { width: 100%; margin: 5px 0; max-width: 375px; }
+section.features img { width: 100%; margin: 65px 0; max-width: 375px; }
 
-section.features p { font-family: 'Saira', sans-serif; font-size: 12px; font-weight: 300; margin: 20px 0; }
+section.features p { font-family: 'Saira', sans-serif; font-size: 18px; font-weight: 300; margin: 20px 0; }
 
 @media (min-width: 360px) and (orientation: portrait) { section.features h1 { font-size: 28px; }
   section.features h2 { font-size: 24px; }
@@ -101,3 +101,43 @@ section.features p { font-family: 'Saira', sans-serif; font-size: 12px; font-wei
   section.features h1 { font-size: 60px; }
   section.features h2 { font-size: 36px; }
   section.features p { font-size: 21px; } }
+
+section.portfolio { background-color: #000; color: #fff; padding: 15px 0 30px; }
+
+section.portfolio > h1 { font-size: 25px; font-family: 'Saira Extra Condensed', sans-serif; text-transform: uppercase; color: #fff; text-align: center; padding: 10px 20px; margin-bottom: 15px; }
+
+section.portfolio .web img { width: 100%; max-width: 780px; }
+
+section.portfolio .about { font-family: 'Saira', sans-serif; font-weight: normal; padding: 10px 20px 20px 0; text-align: left; }
+
+section.portfolio h2 { font-size: 18px; border-bottom: 2px solid #fff; margin-bottom: 12px; padding-bottom: 6px; text-indent: 20px; text-transform: uppercase; }
+
+section.portfolio p { font-size: 12px; padding-left: 20px; }
+
+section.portfolio .project { max-width: 1400px; margin: 0 auto 20px; }
+
+section.portfolio .project:nth-of-type(odd) { background-color: orangered; }
+
+section.portfolio .project:nth-of-type(even) { background-color: deepskyblue; }
+
+@media (orientation: landscape) { section.portfolio .web, section.portfolio .about { width: 50%; float: left; }
+  section.portfolio img { display: block; height: 33vh; }
+  section.portfolio .project:nth-of-type(even) .web { float: right; }
+  section.portfolio .project:nth-of-type(even) .about h2 { text-indent: 0; margin-left: 40px; }
+  section.portfolio .project:nth-of-type(even) .about { padding-right: 0; }
+  section.portfolio .project:nth-of-type(even) .about p { padding-right: 20px; } }
+
+@media (orientation: landscape) and (min-width: 1024px) { section.portfolio > h1 { font-size: 65px; padding: 35px 0; } }
+
+@media (orientation: landscape) and (min-width: 1400px) { section.portfolio > h1 { font-size: 60px; padding: 30px 0; }
+  section.portfolio h2 { padding-top: 50px; font-size: 28px; text-indent: 40px; margin-bottom: 50px; }
+  section.portfolio p { font-size: 18px; padding-left: 40px; line-height: 180%; }
+  section.portfolio .project { margin-bottom: 40px; }
+  section.portfolio img { height: 34vh; } }
+
+@media (orientation: landscape) and (min-width: 533px) { section.portfolio > h1 { font-size: 32px; } }
+
+@media (min-width: 768px) { section.portfolio > h1 { font-size: 40px; }
+  section.portfolio h2 { font-size: 28px; text-indent: 40px; }
+  section.portfolio p { font-size: 18px; padding-left: 40px; }
+  section.portfolio .project { margin-bottom: 40px; } }
