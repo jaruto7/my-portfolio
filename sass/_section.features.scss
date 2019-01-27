@@ -1,0 +1,119 @@
+// FEATURES SECTION
+
+section.features {
+ max-width: 1600px;
+ margin: 50px auto 0;
+ padding: 5%;
+ text-align: center;
+
+ h1 {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+ }
+
+ h2 {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+ }
+
+ img {
+  width: 100%;
+  margin: 5px 0;
+  max-width: 375px;
+ }
+
+ p {
+  font-family: 'Saira', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  margin: 20px 0;
+ }
+
+ @media(min-width: 360px) and (orientation: portrait) {
+  h1 {
+   font-size: 28px;
+  }
+
+  h2 {
+   font-size: 24px;
+  }
+
+  p {
+   font-size: 15px;
+  }
+ }
+
+ @media(min-width: 768px) and (orientation: portrait) {
+  h1 {
+   font-size: 36px;
+  }
+
+  h2 {
+   font-size: 28px;
+  }
+
+  p {
+   font-size: 18px;
+  }
+ }
+
+ @media(min-width: 1024px) {
+  & {
+   padding: 5% 2%;
+  }
+
+  .feature {
+   float: left;
+   width: 33%;
+   padding: 30px;
+  }
+
+  h1 {
+   font-size: 36px;
+  }
+
+  h2 {
+   font-size: 22px;
+  }
+
+  p {
+   font-size: 16px;
+  }
+ }
+
+ @media(min-width: 1366px) {
+
+  h1 {
+   font-size: 56px;
+  }
+
+  h2 {
+   font-size: 36px;
+  }
+
+  p {
+   font-size: 23px;
+  }
+ }
+
+ @media(min-width: 1600px) {
+  .feature {
+   padding: 20px 40px;
+  }
+
+  h1 {
+   font-size: 60px;
+  }
+
+  h2 {
+   font-size: 36px;
+  }
+
+  p {
+   font-size: 21px;
+  }
+ }
+}
