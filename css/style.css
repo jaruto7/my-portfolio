@@ -394,4 +394,4 @@ section.slogan .dots span.active { box-shadow: 0 0 0 5px white, 0 0 3px 10px red
   .contact form input, .contact form button, .contact form textarea, .contact .socials input, .contact .socials button, .contact .socials textarea { margin-bottom: 35px; }
   .contact form .social, .contact .socials .social { display: block; width: 50%; margin: 0 auto; } }
 
-footer { background-color: #e74c3c; color: #fff; font-family: 'Saira', sans-serif; text-align: center; padding: 20px; font-size: 24px; }
+footer { background-color: orangered; color: #fff; font-family: 'Saira', sans-serif; text-align: center; padding: 20px; font-size: 24px; }
