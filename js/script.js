@@ -1,13 +1,18 @@
 // Stwórz zmienną stałą przechowującą obiekty slidera
 const slideList = [{
     img: "images/motto.jpg",
-    text: "Tańcz tak, jakby nikt nie patrzył. Śpiewaj tak, jakby nikt nie słuchał. Kochaj to co robisz jakby nikt się nigdy o tym nie dowiedział i żyj tak, jakby to niebo było na ziemi.",
-    author: "Mark Twain"
+    text: "Sukces jest wtedy gdy okazja spotyka się z przygotowaniem.",
+    author: "Jimmy Johnson"
   },
   {
     img: "images/motto2.jpg",
-    text: "Śpiewaj tak, jakby nikt nie słuchał. Kochaj to co robisz jakby nikt się nigdy o tym nie dowiedział.",
-    author: "Twain"
+    text: "Do sukcesu nie ma windy, trzeba iść po schodach.",
+    author: "Emil Oesch"
+  },
+  {
+    img: "images/motto3.jpg",
+    text: "Tańcz tak, jakby nikt nie patrzył. Śpiewaj tak, jakby nikt nie słuchał. Kochaj to co robisz jakby nikt się nigdy o tym nie dowiedział i żyj tak, jakby to niebo było na ziemi.",
+    author: "Mark Twain"
   }
 ];
 
