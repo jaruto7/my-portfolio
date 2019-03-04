@@ -4,6 +4,7 @@ section.portfolio {
  padding: 15px 0 30px;
 
 
+
  &>h1 {
   font-size: 25px;
   font-family: 'Saira Extra Condensed', sans-serif;
@@ -44,6 +45,33 @@ section.portfolio {
   max-width: 1400px;
   margin: 0 auto 20px;
   cursor: pointer;
+  transition: 1s cubic-bezier(.97, 1.87, .83, .67);
+ }
+
+ .slide-left {
+  transform: translateX(-100vw);
+  opacity: 1;
+
+
+  &.active:hover {
+   opacity: 1;
+  }
+ }
+
+ .slide-right {
+  transform: translateX(100vw);
+  opacity: 1;
+
+  &.active:hover {
+   opacity: 1;
+  }
+ }
+
+
+ .slide-left.active,
+ .slide-right.active {
+  transform: translateX(0);
+  opacity: .5;
  }
 
  .project:nth-of-type(odd) {
