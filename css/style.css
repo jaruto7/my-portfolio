@@ -258,13 +258,13 @@ section.modal-wrap.active .modal i.fa-times-circle { font-size: 14px; }
   section.modal-wrap.active .modal img { width: 80%; left: 10%; top: 0; height: 100%; }
   section.modal-wrap.active .modal i.fa-times-circle { font-size: 63px; top: 5%; right: 4.9%; } }
 
-section.gallery { background-color: black; }
+section.gallery { background-color: black; padding: 75px 0; }
 
-section.gallery h1 { font-size: 40px; font-family: 'Saira Extra Condensed', sans-serif; text-transform: uppercase; color: #fff; text-align: center; transform: translateY(-35vh); }
+section.gallery h1 { font-size: 40px; font-family: 'Saira Extra Condensed', sans-serif; text-transform: uppercase; color: #fff; text-align: center; transform: translateY(-10vh); }
 
 section.gallery img.slider { transform: scale(0) rotate(95deg) translate(0, -20vh); transition: 1s; border-radius: 50%; }
 
-section.gallery img.slider.active { display: block; transform: scale(1) rotate(0) translate(0, -20%); width: 85%; border: 2px solid white; animation: glowPicture linear 1.3s infinite; }
+section.gallery img.slider.active { display: block; transform: scale(1) rotate(0) translate(0, -3%); width: 85%; border: 2px solid white; animation: glowPicture linear 1.3s infinite; }
 
 @keyframes glowPicture { 0% { box-shadow: 0 0 15px 5px #94b9e9; }
   50% { box-shadow: 0 0 25px 1.5px #01305c; }

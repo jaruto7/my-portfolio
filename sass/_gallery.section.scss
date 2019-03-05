@@ -1,7 +1,7 @@
 // MOTTO SECTION
 section.gallery {
  background-color: black;
- // padding: 20px 0;
+ padding: 75px 0;
 
  h1 {
   font-size: 40px;
@@ -9,7 +9,7 @@ section.gallery {
   text-transform: uppercase;
   color: #fff;
   text-align: center;
-  transform: translateY(-35vh);
+  transform: translateY(-10vh);
  }
 
  img.slider {
@@ -20,7 +20,7 @@ section.gallery {
 
  img.slider.active {
   display: block;
-  transform: scale(1) rotate(0) translate(0, -20%);
+  transform: scale(1) rotate(0) translate(0, -3%);
   width: 85%;
   border: 2px solid white;
   animation: glowPicture linear 1.3s infinite;
