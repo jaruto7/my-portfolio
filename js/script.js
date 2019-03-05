@@ -37,29 +37,40 @@ document.querySelector('span.close').addEventListener('click', closeModal);
 
 document.addEventListener('scroll', function () {
   const slideLeft = document.querySelector('.slide-left');
-  const windowSlideLeftHeight = slideLeft.clientHeight;
-  const scrollSlideLeftValue = window.scrollY;
+  const slideRight = document.querySelector('.slide-right');
+  const gallery = document.querySelector('.slider');
+  const galleryFromTop = gallery.offsetTop;
+  const galleryHeight = gallery.offsetHeight;
+  const windowLeftHeight = slideLeft.clientHeight;
+  const windowRightHeight = slideRight.clientHeight;
+  const windowGalleryHeight = gallery.clientHeight;
+  const scrollValue = window.scrollY;
+  // console.log(windowHeight)
+
   const slideLeftFromTop = slideLeft.offsetTop;
   const slideLeftHeight = slideLeft.offsetHeight;
 
-  const slideRight = document.querySelector('.slide-right');
-  const windowSlideRightHeight = slideRight.clientHeight;
-  const scrollSlideRightValue = window.scrollY;
   const slideRightFromTop = slideRight.offsetTop;
   const slideRightHeight = slideRight.offsetHeight;
 
-  if (scrollSlideLeftValue > slideLeftFromTop + slideLeftHeight - windowSlideLeftHeight * 3) {
+  // Sprawdź czy wartość naszego scrolla jest większa od odległości naszego elementu div plus jego wysokość
+  //Pozycja scrolla nigdy sie nie pojawi gdy strona nie jest wieksza jak okno przegladarki wiec musimy od tego odjac ponownie wysokosc okna przegladarki
+  // Pierwsze okno przegladarki nie jest scrollowane poniewaz te okno od razu jest widoczne przy zaladowaniu strony dlatego musimy odjac wysokosc okna przegladarki ponownie bo elementy ktorym chcemy nadac klase sa pod oknem przegladarki domyslnie
+  if (scrollValue > slideLeftFromTop + slideLeftHeight - windowLeftHeight * 2.5) {
     slideLeft.classList.add('active');
   }
 
-  if (scrollSlideRightValue > slideRightFromTop + slideRightHeight - windowSlideRightHeight * 2.5) {
+  if (scrollValue > slideRightFromTop + slideRightHeight - windowRightHeight * 2.9) {
     slideRight.classList.add('active');
   }
 
+  if (scrollValue > galleryFromTop + galleryHeight - windowGalleryHeight * 2) {
+    gallery.classList.add('active');
+  }
 
-
-  if (scrollSlideLeftValue < 100 && scrollSlideRightValue < 100) {
+  if (scrollValue < 100) {
     slideLeft.classList.remove('active');
     slideRight.classList.remove('active');
+    gallery.classList.remove('active');
   }
 })
