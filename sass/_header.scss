@@ -60,8 +60,8 @@ header {
 
  h1 {
   font-size: 20px;
-  margin-top: 15px;
   color: #34495e;
+  padding-bottom: 8px;
  }
 
  h2 {
@@ -254,6 +254,7 @@ header {
     background-position: 0 100%;
     color: #fff;
     transform: scale(1.1, 1.1);
+    border: none;
    }
   }
 

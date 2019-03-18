@@ -13,9 +13,9 @@ section.gallery {
  }
 
  img.slider {
-  transform: scale(0) rotate(95deg) translate(0, -20vh);
+  transform: scale(0) rotate(160deg) translate(0, -20vh);
   transition: 1s;
-  border-radius: 50%;
+  // border-radius: 50%;
  }
 
  img.slider.active {
