@@ -1,1 +1,1 @@
-This is my portfolio where you can find what motivates me, what my hobbies are or you can check my current projects.
+This is my portfolio when you can check my current projects I am currently working on.
